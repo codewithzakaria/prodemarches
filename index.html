@@ -1,0 +1,881 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProDémarches - Vos démarches administratives simplifiées</title>
+    <meta content="démarches administratives, services publics, documents officiels" name="keywords">
+    <meta content="ProDémarches vous accompagne dans toutes vos démarches administratives" name="description">
+
+    <!-- Favicon -->
+    <link rel="icon" href="img/icon/icon-1.png">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700&family=Open+Sans:wght@400;500&display=swap">
+
+    <!-- Icon Font Stylesheet -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
+
+    <!-- Libraries Stylesheet -->
+    <link rel="stylesheet" href="lib/animate/animate.min.css">
+    <link rel="stylesheet" href="lib/owlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="lib/lightbox/css/lightbox.min.css">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- Template Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- mailJs-->
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+    (function(){
+    emailjs.init({
+        publicKey: "LznIwXLDLhRp3h2sY",
+    });
+    })();
+    </script>
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" role="status" style="width: 3rem; height: 3rem;"></div>
+    </div>
+    <!-- Spinner End -->
+
+    <!-- Topbar Start -->
+    <div class="container-fluid bg-dark text-light px-0 py-2">
+        <div class="row gx-0 d-none d-lg-flex">
+            <div class="col-lg-7 px-5 text-start">
+                <div class="h-100 d-inline-flex align-items-center me-4">
+                    <span class="fa fa-phone-alt me-2"></span>
+                    <span>+33 781 618 076</span>
+                </div>
+                <div class="h-100 d-inline-flex align-items-center">
+                    <span class="far fa-envelope me-2"></span>
+                    <span>contact@prodemarches.fr</span>
+                </div>
+            </div>
+            <div class="col-lg-5 px-5 text-end">
+                <div class="h-100 d-inline-flex align-items-center">
+                    <span>Suivez-nous :</span>
+                    <a href="#" class="btn btn-link text-light"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="btn btn-link text-light"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="btn btn-link text-light"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0">
+        <div class="container d-flex align-items-center">
+            <a href="#" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+                <h1 class="m-0">ProDémarches</h1>
+            </a>
+            <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse"
+                data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+                <span class="visually-hidden">Précédent</span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto p-0 d-flex align-items-center">
+                    <a href="index.html" class="nav-item nav-link active">Accueil</a>
+                    <a href="#about" class="nav-item nav-link">À propos</a>
+                    <a href="#services" class="nav-item nav-link">Nos Services</a>
+                    <a href="#demarches" class="nav-item nav-link">Démarches</a>
+                    <a href="#contact" class="nav-item nav-link">Contact</a>
+                </div>
+                <!-- Bouton ajusté pour avoir la même taille que les autres éléments -->
+                <a href="#rdv" class="btn btn-primary py-1 px-3 rounded-0 ms-3 d-flex align-items-center">
+                    Obtenir un devis<i class="fa fa-arrow-right ms-2"></i>
+                </a>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Header Start -->
+    <div class="container-fluid p-0 wow fadeIn" data-wow-delay="0.1s">
+        <div id="header-carousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <!-- Slide 1 -->
+                <div class="carousel-item active">
+                    <img src="img/carousel-1.jpg" alt="Carousel Image 1" class="w-100">
+                    <div class="carousel-caption">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-7">
+                                    <h1 class="display-1 text-white mb-5 animated slideInDown">
+                                        Simplifiez Vos Démarches Administratives
+                                    </h1>
+                                    <a href="#services" class="btn btn-primary py-sm-3 px-sm-4">Découvrir Nos Services</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Slide 2 -->
+                <div class="carousel-item">
+                    <img src="img/carousel-2.jpg" alt="Carousel Image 2" class="w-100">
+                    <div class="carousel-caption">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-7">
+                                    <h1 class="display-1 text-white mb-5 animated slideInDown">
+                                        Obtenez Vos Documents Officiels Rapidement
+                                    </h1>
+                                    <a href="#contact" class="btn btn-primary py-sm-3 px-sm-4">Contactez-Nous</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Controls -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Précédent</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#header-carousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Suivant</span>
+            </button>
+        </div>
+    </div>
+    <!-- Header End -->
+
+    <!-- Top Feature Start -->
+    <div class="container-fluid top-feature py-5 pt-lg-0">
+        <div class="container py-5 pt-lg-0">
+            <div class="row gx-0">
+                <!-- Feature 1 -->
+                <div class="col-lg-4 wow fadeIn" data-wow-delay="0.1s">
+                    <div class="bg-white shadow d-flex align-items-center h-100 px-5" style="min-height: 160px;">
+                        <div class="d-flex">
+                            <div class="flex-shrink-0 btn-lg-square rounded-circle bg-light">
+                                <i class="fa fa-file-alt text-primary"></i>
+                            </div>
+                            <div class="ps-3">
+                                <h4>Aucune Démarche Cachée</h4>
+                                <span>Transparence totale dans toutes vos démarches administratives.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Feature 2 -->
+                <div class="col-lg-4 wow fadeIn" data-wow-delay="0.3s">
+                    <div class="bg-white shadow d-flex align-items-center h-100 px-5" style="min-height: 160px;">
+                        <div class="d-flex">
+                            <div class="flex-shrink-0 btn-lg-square rounded-circle bg-light">
+                                <i class="fa fa-users text-primary"></i>
+                            </div>
+                            <div class="ps-3">
+                                <h4>Équipe Dédiée</h4>
+                                <span>Des experts prêts à vous guider pas à pas dans vos démarches.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Feature 3 -->
+                <div class="col-lg-4 wow fadeIn" data-wow-delay="0.5s">
+                    <div class="bg-white shadow d-flex align-items-center h-100 px-5" style="min-height: 160px;">
+                        <div class="d-flex">
+                            <div class="flex-shrink-0 btn-lg-square rounded-circle bg-light">
+                                <i class="fa fa-clock text-primary"></i>
+                            </div>
+                            <div class="ps-3">
+                                <h4>Disponibilité 24/7</h4>
+                                <span>Une assistance disponible à tout moment pour répondre à vos besoins.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Top Feature End -->
+
+    <!-- About Start -->
+    <div class="container-xxl py-5" id="about">
+        <div class="container">
+            <div class="row g-5 align-items-end">
+                <!-- Image Section -->
+                <div class="col-lg-3 col-md-5 wow fadeInUp" data-wow-delay="0.1s">
+                    <img src="img/about.jpg" class="img-fluid rounded" alt="Démarches Administratives">
+                </div>
+                <!-- About Text Section -->
+                <div class="col-lg-6 col-md-7 wow fadeInUp" data-wow-delay="0.3s">
+                    <h1 class="display-1 text-primary mb-0">10+</h1>
+                    <p class="text-primary mb-4">Années d'Expérience</p>
+                    <h1 class="display-5 mb-4">Simplifiez vos Démarches Administratives</h1>
+                    <p class="mb-4">
+                        Nous sommes spécialisés dans l'accompagnement administratif pour particuliers et entreprises. 
+                        Obtenez des services rapides, fiables et simplifiés, peu importe vos besoins.
+                    </p>
+                    <a href="#" class="btn btn-primary py-3 px-4">En Savoir Plus</a>
+                </div>
+                <!-- Highlights Section -->
+                <div class="col-lg-3 col-md-12 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="row g-5">
+                        <!-- Highlight 1 -->
+                        <div class="col-lg-12 col-sm-6 col-12">
+                            <div class="border-start ps-4">
+                                <i class="fa fa-award fa-3x text-primary mb-3"></i>
+                                <h3 class="mb-3">Services Primés</h3>
+                                <span>Reconnu pour notre excellence dans la simplification des processus administratifs.</span>
+                            </div>
+                        </div>
+                        <!-- Highlight 2 -->
+                        <div class="col-lg-12 col-sm-6 col-12">
+                            <div class="border-start ps-4">
+                                <i class="fa fa-users fa-3x text-primary mb-3"></i>
+                                <h3 class="mb-3">Équipe Dévouée</h3>
+                                <span>Une équipe expérimentée pour vous guider à chaque étape de vos démarches.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+    <!-- Fact Start -->
+    <div class="container-fluid facts my-5 py-5" data-parallax="scroll" data-image-src="img/carousel-1.jpg">
+        <div class="container py-5">
+            <div class="row g-5">
+                <!-- Fact 1 -->
+                <div class="col-sm-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.1s">
+                    <h1 class="display-4 text-white" data-bs-toggle="counter-up">5000+</h1>
+                    <span class="fs-5 fw-semi-bold text-light">Clients Satisfaits</span>
+                </div>
+                <!-- Fact 2 -->
+                <div class="col-sm-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.1s">
+                    <h1 class="display-4 text-white" data-bs-toggle="counter-up">10,000+</h1>
+                    <span class="fs-5 fw-semi-bold text-light">Démarches Réalisées</span>
+                </div>
+                <!-- Fact 3 -->
+                <div class="col-sm-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.1s">
+                    <h1 class="display-4 text-white" data-bs-toggle="counter-up">50+</h1>
+                    <span class="fs-5 fw-semi-bold text-light">Récompenses Obtenues</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Fact End -->
+
+    <!-- Features Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <p class="fs-5 fw-bold text-primary">Pourquoi nous choisir ?</p>
+                    <h1 class="display-5 mb-4">Quelques raisons pour lesquelles vous devriez nous faire confiance</h1>
+                    <p class="mb-4">
+                        Simplifiez toutes vos démarches administratives grâce à notre expertise. Que ce soit pour vos documents professionnels, vos dossiers personnels ou vos besoins spécifiques, nous sommes là pour vous aider.
+                    </p>
+                    <a href="#" class="btn btn-primary py-3 px-4">En Savoir Plus</a>
+                </div>
+                <div class="col-lg-6">
+                    <div class="row g-4 align-items-center">
+                        <div class="col-md-6">
+                            <div class="row g-4">
+                                <div class="col-12 wow fadeIn" data-wow-delay="0.3s">
+                                    <div class="text-center rounded py-5 px-4" style="box-shadow: 0 0 45px rgba(0,0,0,.08);">
+                                        <div class="btn-square bg-light rounded-circle mx-auto mb-4" style="width: 90px; height: 90px;">
+                                            <i class="fa fa-check fa-3x text-primary"></i>
+                                        </div>
+                                        <h4 class="mb-0">100% de Satisfaction</h4>
+                                    </div>
+                                </div>
+                                <div class="col-12 wow fadeIn" data-wow-delay="0.5s">
+                                    <div class="text-center rounded py-5 px-4" style="box-shadow: 0 0 45px rgba(0,0,0,.08);">
+                                        <div class="btn-square bg-light rounded-circle mx-auto mb-4" style="width: 90px; height: 90px;">
+                                            <i class="fa fa-users fa-3x text-primary"></i>
+                                        </div>
+                                        <h4 class="mb-0">Équipe Dévouée</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 wow fadeIn" data-wow-delay="0.7s">
+                            <div class="text-center rounded py-5 px-4" style="box-shadow: 0 0 45px rgba(0,0,0,.08);">
+                                <div class="btn-square bg-light rounded-circle mx-auto mb-4" style="width: 90px; height: 90px;">
+                                    <i class="fa fa-cogs fa-3x text-primary"></i>
+                                </div>
+                                <h4 class="mb-0">Processus Simplifiés</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Features End -->
+
+    <!-- Service Start -->
+    <div class="container-xxl py-5" id="services">
+        <div class="container">
+            <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+                <p class="fs-5 fw-bold text-primary">Nos Services</p>
+                <h1 class="display-5 mb-5">Des solutions adaptées à vos démarches</h1>
+            </div>
+            <div class="row g-4">
+                <!-- Service 1 -->
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="service-item rounded d-flex h-100">
+                        <div class="service-img rounded">
+                            <img src="img/service-kbis.jpg" alt="Création KBIS" class="img-fluid">
+                        </div>
+                        <div class="service-text rounded p-5">
+                            <div class="btn-square rounded-circle mx-auto mb-3">
+                                <img src="img/icon/icon-kbis.png" alt="Icon KBIS" class="img-fluid">
+                            </div>
+                            <h4 class="mb-3">Création de KBIS</h4>
+                            <p class="mb-4">Nous vous accompagnons dans toutes les démarches pour obtenir votre extrait KBIS rapidement.</p>
+                            <a href="#" class="btn btn-sm">
+                                <i class="fa fa-plus text-primary me-2"></i>Lire Plus
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Service 2 -->
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="service-item rounded d-flex h-100">
+                        <div class="service-img rounded">
+                            <img src="img/service-urssaf.jpg" alt="Accompagnement URSSAF" class="img-fluid">
+                        </div>
+                        <div class="service-text rounded p-5">
+                            <div class="btn-square rounded-circle mx-auto mb-3">
+                                <img src="img/icon/icon-urssaf.png" alt="Icon URSSAF" class="img-fluid">
+                            </div>
+                            <h4 class="mb-3">Accompagnement URSSAF</h4>
+                            <p class="mb-4">Gestion simplifiée de vos déclarations et formalités liées à l'URSSAF.</p>
+                            <a href="#" class="btn btn-sm">
+                                <i class="fa fa-plus text-primary me-2"></i>Lire Plus
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Service 3 -->
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded d-flex h-100">
+                        <div class="service-img rounded">
+                            <img src="img/service-logement.jpg" alt="Dossier Logement Social" class="img-fluid">
+                        </div>
+                        <div class="service-text rounded p-5">
+                            <div class="btn-square rounded-circle mx-auto mb-3">
+                                <img src="img/icon/icon-logement.png" alt="Icon Logement Social" class="img-fluid">
+                            </div>
+                            <h4 class="mb-3">Dossier Logement Social</h4>
+                            <p class="mb-4">Aide complète pour constituer et suivre votre dossier de demande de logement social.</p>
+                            <a href="#" class="btn btn-sm">
+                                <i class="fa fa-plus text-primary me-2"></i>Lire Plus
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Service 4 -->
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.4s">
+                    <div class="service-item rounded d-flex h-100">
+                        <div class="service-img rounded">
+                            <img src="img/service-assurance.jpg" alt="Dossier Assurance Maladie" class="img-fluid">
+                        </div>
+                        <div class="service-text rounded p-5">
+                            <div class="btn-square rounded-circle mx-auto mb-3">
+                                <img src="img/icon/icon-assurance.png" alt="Icon Assurance Maladie" class="img-fluid">
+                            </div>
+                            <h4 class="mb-3">Dossier Assurance Maladie</h4>
+                            <p class="mb-4">Nous facilitons vos démarches pour l'ouverture de droits à l'assurance maladie.</p>
+                            <a href="#" class="btn btn-sm">
+                                <i class="fa fa-plus text-primary me-2"></i>Lire Plus
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Service 5 -->
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="service-item rounded d-flex h-100">
+                        <div class="service-img rounded">
+                            <img src="img/service-caf.jpg" alt="CAF et aides sociales" class="img-fluid">
+                        </div>
+                        <div class="service-text rounded p-5">
+                            <div class="btn-square rounded-circle mx-auto mb-3">
+                                <img src="img/icon/icon-caf.png" alt="Icon CAF" class="img-fluid">
+                            </div>
+                            <h4 class="mb-3">Aides CAF et Prime d'Activité</h4>
+                            <p class="mb-4">Accompagnement pour vos demandes d'aides au logement et prime d'activité.</p>
+                            <a href="#" class="btn btn-sm">
+                                <i class="fa fa-plus text-primary me-2"></i>Lire Plus
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Service 6 -->
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
+                    <div class="service-item rounded d-flex h-100">
+                        <div class="service-img rounded">
+                            <img src="img/service-carte-grise.png" alt="Carte Grise et Permis" class="img-fluid">
+                        </div>
+                        <div class="service-text rounded p-5">
+                            <div class="btn-square rounded-circle mx-auto mb-3">
+                                <img src="img/icon/icon-vehicule.png" alt="Icon Carte Grise" class="img-fluid">
+                            </div>
+                            <h4 class="mb-3">Carte Grise et Permis</h4>
+                            <p class="mb-4">Nous prenons en charge vos démarches pour l'immatriculation de véhicules et permis de conduire.</p>
+                            <a href="#" class="btn btn-sm">
+                                <i class="fa fa-plus text-primary me-2"></i>Lire Plus
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Service End -->
+
+    <!-- Quote Start -->
+    <div class="container-fluid quote my-5 py-5" data-parallax="scroll" data-image-src="img/carousel-2" id="quote">
+        <div class="container py-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-7">
+                    <div class="bg-white rounded p-4 p-sm-5 wow fadeIn" data-wow-delay="0.5s">
+                        <h1 class="display-5 text-center mb-5">Demandez un Devis Gratuit</h1>
+                        <form onsubmit="event.preventDefault(); sendMail();">
+                            <div class="row g-3">
+                                <div class="col-sm-6">
+                                    <div class="form-floating">
+                                        <input type="text" name="name" id="name" class="form-control bg-light border-0" placeholder="Nom" required>
+                                        <label for="name">Votre Nom</label>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-6">
+                                    <div class="form-floating">
+                                        <input type="email" name="email" id="email" class="form-control bg-light border-0" placeholder="Email" required>
+                                        <label for="email">Votre Email</label>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-6">
+                                    <div class="form-floating">
+                                        <input type="tel" name="mobile" id="mobile" class="form-control bg-light border-0" placeholder="Téléphone" required>
+                                        <label for="mobile">Votre Téléphone</label>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-6">
+                                    <div class="form-floating">
+                                        <input type="text" name="service_type" id="service" class="form-control bg-light border-0" placeholder="Services" required>
+                                        <label for="service">Type de Service</label>
+                                    </div>
+                                </div>
+
+                                <div class="col-12">
+                                    <div class="form-floating">
+                                        <textarea name="message" id="message" class="form-control bg-light border-0" placeholder="Message" style="height: 100px" required></textarea>
+                                        <label for="message">Message</label>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 text-center">
+                                    <button type="submit" class="btn btn-primary py-3 px-4">Soumettre Maintenant</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Quote End -->
+
+    <!-- Démarches Start -->
+    <div class="container-xxl py-5" id="demarches">
+        <div class="container">
+            <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+                <p class="fs-5 fw-bold text-primary">Nos Démarches</p>
+                <h1 class="display-5 mb-5">Les Démarches Administratives que Nous Proposons</h1>
+            </div>
+
+            <!-- Filtres de Démarches -->
+            <div class="row wow fadeInUp" data-wow-delay="0.3s">
+                <div class="col-12 text-center">
+                    <ul class="list-inline rounded mb-5" id="portfolio-filters">
+                        <li class="mx-2 filter-item active" data-filter="*">Tous</li>
+                        <li class="mx-2 filter-item" data-filter=".first">Démarches Complétées</li>
+                        <li class="mx-2 filter-item" data-filter=".second">Démarches en Cours</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Grille des Démarches -->
+            <div class="row g-4 portfolio-container">
+                <!-- Démarches Complétées -->
+                <div class="col-lg-4 col-md-6 portfolio-item first wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="portfolio-inner rounded">
+                        <img src="img/service-1.jpg" alt="" class="img-fluid">
+                        <div class="portfolio-text">
+                            <h4 class="text-white mb-4">Création de Kbis</h4>
+                            <div class="d-flex">
+                                <a href="#" class="btn btn-lg-square rounded-circle mx-2">
+                                    <i class="fa fa-eye"></i>
+                                </a>
+                                <a href="#" class="btn btn-lg-square rounded-circle mx-2">
+                                    <i class="fa fa-link"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Démarches en Cours -->
+                <div class="col-lg-4 col-md-6 portfolio-item second wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="portfolio-inner rounded">
+                        <img src="img/service-2.jpg" alt="" class="img-fluid">
+                        <div class="portfolio-text">
+                            <h4 class="text-white mb-4">Accompagnement URSSAF</h4>
+                            <div class="d-flex">
+                                <a href="#" class="btn btn-lg-square rounded-circle mx-2">
+                                    <i class="fa fa-eye"></i>
+                                </a>
+                                <a href="#" class="btn btn-lg-square rounded-circle mx-2">
+                                    <i class="fa fa-link"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Démarches Complétées -->
+                <div class="col-lg-4 col-md-6 portfolio-item first wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="portfolio-inner rounded">
+                        <img src="img/service-3.jpg" alt="" class="img-fluid">
+                        <div class="portfolio-text">
+                            <h4 class="text-white mb-4">Dossier Logement Social</h4>
+                            <div class="d-flex">
+                                <a href="#" class="btn btn-lg-square rounded-circle mx-2">
+                                    <i class="fa fa-eye"></i>
+                                </a>
+                                <a href="#" class="btn btn-lg-square rounded-circle mx-2">
+                                    <i class="fa fa-link"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Ajouter plus de services si nécessaire -->
+            </div>
+
+            <!-- Grille avec autres Démarches, avec un espacement -->
+            <div class="row g-4 portfolio-container mb-5">
+                <!-- Démarches Complétées -->
+                <div class="col-lg-4 col-md-6 portfolio-item first wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="portfolio-inner rounded">
+                        <img src="img/service-1.jpg" alt="" class="img-fluid">
+                        <div class="portfolio-text">
+                            <h4 class="text-white mb-4">Création de Kbis</h4>
+                            <div class="d-flex">
+                                <a href="#" class="btn btn-lg-square rounded-circle mx-2">
+                                    <i class="fa fa-eye"></i>
+                                </a>
+                                <a href="#" class="btn btn-lg-square rounded-circle mx-2">
+                                    <i class="fa fa-link"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Démarches en Cours -->
+                <div class="col-lg-4 col-md-6 portfolio-item second wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="portfolio-inner rounded">
+                        <img src="img/service-2.jpg" alt="" class="img-fluid">
+                        <div class="portfolio-text">
+                            <h4 class="text-white mb-4">Accompagnement URSSAF</h4>
+                            <div class="d-flex">
+                                <a href="#" class="btn btn-lg-square rounded-circle mx-2">
+                                    <i class="fa fa-eye"></i>
+                                </a>
+                                <a href="#" class="btn btn-lg-square rounded-circle mx-2">
+                                    <i class="fa fa-link"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Démarches Complétées -->
+                <div class="col-lg-4 col-md-6 portfolio-item first wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="portfolio-inner rounded">
+                        <img src="img/service-3.jpg" alt="" class="img-fluid">
+                        <div class="portfolio-text">
+                            <h4 class="text-white mb-4">Dossier Logement Social</h4>
+                            <div class="d-flex">
+                                <a href="#" class="btn btn-lg-square rounded-circle mx-2">
+                                    <i class="fa fa-eye"></i>
+                                </a>
+                                <a href="#" class="btn btn-lg-square rounded-circle mx-2">
+                                    <i class="fa fa-link"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Ajouter plus de services si nécessaire -->
+            </div>
+        </div>
+    </div>
+    <!-- Démarches End -->
+
+    <!-- Team Start-->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+                <p class="fs-5 fw-bold text-primary">Notre Équipe</p>
+                <h1 class="display-5 mb-5">Équipe Dévouée et Expérimentée</h1>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="team-item rounded">
+                        <img src="img/team-1.jpg" alt="" class="img-fluid">
+                        <div class="team-text">
+                            <h4 class="mb-0">Djamel Dridi</h4>
+                            <p class="text-primary">Conseiller Administratif</p>
+                            <div class="team-social d-flex">
+                                <a href="#" class="btn btn-square rounded-circle me-2">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a href="#" class="btn btn-square rounded-circle me-2">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a href="#" class="btn btn-square rounded-circle me-2">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="team-item rounded">
+                        <img src="img/team-2.jpg" alt="" class="img-fluid">
+                        <div class="team-text">
+                            <h4 class="mb-0">Zakaria Dridi</h4>
+                            <p class="text-primary">Responsable Informatique</p>
+                            <div class="team-social d-flex">
+                                <a href="#" class="btn btn-square rounded-circle me-2">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a href="#" class="btn btn-square rounded-circle me-2">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a href="#" class="btn btn-square rounded-circle me-2">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add more team members as needed -->
+            </div>
+        </div>
+    </div>
+    <!-- Team End -->
+
+    <!-- Testimonial Start-->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-5 wow fadeInUp" data-wow-delay="0.1s">
+                    <p class="fs-5 fw-bold text-primary">Témoignages</p>
+                    <h1 class="display-5 mb-5">Ce que nos clients disent de nous !</h1>
+                    <p class="mb-4">Nos clients apprécient la simplicité et la rapidité de nos démarches administratives. Grâce à notre équipe, ils ont pu facilement accéder aux services et résoudre leurs besoins administratifs sans tracas.</p>
+                    <a href="#" class="btn btn-primary py-3 px-4">Voir plus</a>
+                </div>
+                <div class="col-lg-7 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="owl-carousel testimonial-carousel">
+                        <div class="testimonial-item">
+                            <img src="img/testimonial-1.jpg" alt="" class="img-fluid rounded mb-3">
+                            <p class="fs-5">"Grâce à leur service d'accompagnement pour la création d'une entreprise, j'ai pu m'installer rapidement sans soucis administratifs. Un service réactif et professionnel !"</p>
+                            <h4>Mohamed Sami</h4>
+                            <span>Entrepreneur</span>
+                        </div>
+                        <div class="testimonial-item">
+                            <img src="img/testimonial-2.jpg" alt="" class="img-fluid rounded mb-3">
+                            <p class="fs-5">"Je recommande vivement pour les démarches auprès de l'URSSAF. Ils ont rendu le processus simple et clair."</p>
+                            <h4>Marie Lefevre</h4>
+                            <span>Consultante</span>
+                        </div>
+                        <div class="testimonial-item">
+                            <img src="img/testimonial-3.jpg" alt="" class="img-fluid rounded mb-3">
+                            <p class="fs-5">"Une équipe efficace qui m'a guidé dans toutes les démarches administratives pour mon dossier de logement social. Je suis satisfait du résultat."</p>
+                            <h4>Lucie Martin</h4>
+                            <span>Locataire</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Testimonial End-->
+
+    <!-- Contact Start-->
+    <div class="container-xxl py-5" id="contact">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+                    <p class="fs-5 fw-bold text-primary">Contactez-nous</p>
+                    <h1 class="display-5 mb-5">Si vous avez des questions, contactez-nous</h1>
+                    <p class="mb-4">Si vous avez des questions sur nos services ou si vous avez besoin d'assistance dans vos démarches administratives, n'hésitez pas à nous contacter. Nous sommes là pour vous aider à chaque étape.</p>
+                    <form onsubmit="event.preventDefault(); sendContactMail();">
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control" id="contact-name" name="name"
+                                        placeholder="Votre Nom" autocomplete="name" required>
+                                    <label for="contact-name">Votre Nom</label>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="form-floating">
+                                    <input type="email" class="form-control" id="contact-email" name="email"
+                                        placeholder="Votre Email" autocomplete="email" required>
+                                    <label for="contact-email">Votre Email</label>
+                                </div>
+                            </div>
+
+                            <div class="col-md-12">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control" id="contact-subject" name="subject"
+                                        placeholder="Sujet" autocomplete="off" required>
+                                    <label for="contact-subject">Sujet</label>
+                                </div>
+                            </div>
+
+                            <div class="col-md-12">
+                                <div class="form-floating">
+                                    <textarea id="contact-message" name="message" class="form-control"
+                                        placeholder="Laissez un message ici" style="height: 100px;" autocomplete="off"
+                                        required></textarea>
+                                    <label for="contact-message">Message</label>
+                                </div>
+                            </div>
+
+                            <div class="col-md-12">
+                                <button type="submit" class="btn btn-primary py-3 px-4">Envoyer le message</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s" style="min-height: 450px;">
+                    <div class="position-relative rounded overflow-hidden h-100">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5804.802574986199!2d5.36274189999999!3d43.32679123773747!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12c9c050f79b5f5d%3A0xfc40406e31fcd289!2sMarch%C3%A9%20aux%20Puces%20Cap%20Pin%C3%A8de!5e0!3m2!1sfr!2sfr!4v1734859210338!5m2!1sfr!2sfr"
+                            width="600" height="600" style="border:0; min-height: 450px;" allowfullscreen=""
+                            loading="lazy" aria-hidden="false" referrerpolicy="no-referrer-when-downgrade"
+                            frameborder="0"></iframe>
+                    </div>
+                </div>       
+            </div>
+        </div>
+    </div>
+    <!-- Contact End-->
+
+    <!-- Footer Start-->
+    <div class="container-fluid bg-dark text-light footer mt-5 py-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-4">Notre Bureau</h4>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>123 Rue, Marseille, France</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+33 781 618 076</p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@votresite.com</p>
+                    <div class="d-flex pt-2">
+                        <a href="#" class="btn btn-square btn-outline-light rounded-circle me-2">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="btn btn-square btn-outline-light rounded-circle me-2">
+                            <i class="fab fa-facebook-f"></i>
+                        </a> 
+                        <a href="#" class="btn btn-square btn-outline-light rounded-circle me-2">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-4">Nos Services</h4>
+                    <a href="#" class="btn btn-link">Création d'entreprise</a>
+                    <a href="#" class="btn btn-link">Accompagnement URSSAF</a>
+                    <a href="#" class="btn btn-link">Dossier logement social</a>
+                    <a href="#" class="btn btn-link">Déclaration fiscale</a>
+                    <a href="#" class="btn btn-link">Assistance juridique</a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-4">Liens rapides</h4>
+                    <a href="#" class="btn btn-link">À propos de nous</a>
+                    <a href="#" class="btn btn-link">Contactez-nous</a>
+                    <a href="#" class="btn btn-link">Nos services</a>
+                    <a href="#" class="btn btn-link">Mentions légales</a>
+                    <a href="#" class="btn btn-link">Support</a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-4">Newsletter</h4>
+                    <p>Recevez les dernières mises à jour et nouveautés sur nos services.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End-->
+
+    <!-- Copyright Start-->
+    <div class="container-fluid copyright py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    &copy; <a href="#" class="border-bottom">Votre Service Administratif</a>, Tous droits réservés.
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    Conçu par <a href="#" class="border-bottom">Zakaria Dridi</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Copyright End-->
+
+    <!-- Back to top-->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i
+            class="bi bi-arrow-up"></i></a>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/parallax/parallax.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
